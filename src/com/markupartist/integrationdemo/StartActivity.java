@@ -22,7 +22,7 @@ public class StartActivity extends Activity implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        Uri sayUri = Uri.parse(String.format("say://markupartist?what=%s", "It's working!"));
+        Uri sayUri = Uri.parse(String.format("say://markupartist.com?what=%s", "It's working!"));
         Intent sayIntent = new Intent(Intent.ACTION_VIEW, sayUri);
         startActivity(sayIntent);
     }
